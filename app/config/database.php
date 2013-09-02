@@ -1,7 +1,5 @@
 <?php
 
-include "credentials.php";
-
 return array(
     /*
       |--------------------------------------------------------------------------
@@ -48,14 +46,14 @@ return array(
             'prefix' => '',
         ),
         'mysql' => array(
-            'driver' => $creds[ 'driver' ],
-            'host' => $creds[ 'host' ],
-            'database' => $creds[ 'database' ],
-            'username' => $creds[ 'username' ],
-            'password' => $creds[ 'password' ],
-            'charset' => $creds[ 'charset' ],
-            'collation' => $creds[ 'collation' ],
-            'prefix' => $creds[ 'prefix' ],
+            'driver' => Config::get( 'credentials.driver' ),
+            'host' => Config::get( 'credentials.host' ),
+            'database' => Config::get( 'credentials.database' ),
+            'username' => Config::get( 'credentials.username' ),
+            'password' => Config::get( 'credentials.password' ),
+            'charset' => Config::get( 'credentials.charset' ),
+            'collation' => Config::get( 'credentials.collation' ),
+            'prefix' => Config::get( 'credentials.prefix' ),
         ),
         'pgsql' => array(
             'driver' => 'pgsql',

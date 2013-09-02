@@ -14,9 +14,3 @@
 Route::get( '/', function() {
     return View::make( 'hello' );
 } );
-
-Route::get( '/', function() {
-    $user = User::find( 1 );
-    var_dump($user->email);
-} );
-
