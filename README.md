@@ -14,5 +14,9 @@ Included Packages:
         "imagine/Imagine" : "v0.4.1",
         "barryvdh/laravel-ide-helper" : "1.*"
 
+<<<<<<< HEAD
 Moved database credentials to gitignored php file to allow full source to be hosted on github safely
 
+=======
+Moved database credentials to gitignored php file to allow full source to be hosted on github safely
+>>>>>>> e2caf247625903b5ab05064452d4b5fb0f62523e
